@@ -62,6 +62,37 @@ main {
     box-shadow: -1px 5px 4px 0px rgba(0, 0, 0, 0.363);;
 }
 
+main strong {
+    color: var(--cor4);
+    border-radius: 3px;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+main strong:hover {
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+}
+
+main a {
+    text-decoration: none;
+    color: rgba(4, 4, 121, 0.466);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.473);
+    background-color: rgba(169, 169, 169, 0.212);
+}
+
+main a::after {
+    content: '\00A0\1f517';
+}
+
 nav {
     background-color: var(--cor5);
     padding: 10px;
@@ -92,7 +123,7 @@ article h1 {
 
 article h2 {
     font-family: var(--fonte-android);
-    margin: 15px;
+    
     color: var(--cor5);
     background-image: linear-gradient(to right, var(--cor2), transparent);
 }
@@ -101,4 +132,36 @@ article p {
     font-size: 1.1em;
     text-indent: 30px;
     line-height: 30px;
+    margin: 15px;
 }
+
+main img.pequena {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    margin: -10px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;    
+}
+
+aside ul {
+    list-style: '\2714\00a0\00a0';
+    columns: 2;
+    text-indent: 10px;
+    list-style-position: inside;
+    font-size: 0.9em;
+}
+
+footer
