@@ -59,7 +59,10 @@ main {
     margin: auto;
     padding: 10px;
     background-color: white;
-    box-shadow: -1px 5px 4px 0px rgba(0, 0, 0, 0.363);;
+    box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.363);;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main strong {
@@ -88,6 +91,14 @@ main a:hover {
     color: rgba(0, 0, 255, 0.473);
     background-color: rgba(169, 169, 169, 0.212);
 }
+
+
+main img.pequena {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
 
 main a::after {
     content: '\00A0\1f517';
@@ -135,12 +146,6 @@ article p {
     margin: 15px;
 }
 
-main img.pequena {
-    max-width: 400px;
-    display: block;
-    margin: auto;
-}
-
 aside {
     background-color: var(--cor1);
     padding: 10px;
@@ -164,4 +169,39 @@ aside ul {
     font-size: 0.9em;
 }
 
-footer
+footer {
+    padding: 10px;
+    background-color: var(--cor5);
+    font-size: .8em;
+    text-align: center;
+    color: var(--cor3)
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+footer a::after {
+    content: '\00A0\1f517';
+}
+
+.video {
+    padding:  20px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 54%;
+}
+
+.video > iframe {
+    position: absolute;
+    right: 0.01%;
+    height: 100%;
+    width: 100%;
+}
